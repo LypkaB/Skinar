@@ -1,3 +1,4 @@
+/*<--- header --->*/
 /* navbar */
 .navbar
   position: fixed
@@ -7,7 +8,7 @@
   background-color: #fff
   z-index: 99
   &-wrap
-    min-height: 80px
+    //min-height: 80px
     display: flex
     align-items: center
     justify-content: space-between
@@ -35,9 +36,11 @@
   background-color: $primary
   color: #fff
   transition: 0.2s
-  transform: translateX(-100%)
+  transform: translateX(-200%)
+  opacity: 0
   &_active
-    transform: translateY(0%)
+    transform: translateY(0)
+    opacity: 1
   &__nav
     display: flex
     align-items: center
@@ -75,3 +78,18 @@
     display: block
     font-size: 14px
     color: $text-color-light
+@media (max-width: 991px)
+  .navbar
+    &__mobile, &__landline
+      display: none
+@media (max-width: 576px)
+  .logo
+    display: none
+  .menu
+    top: 60px
+    &-button
+      height: 60px
+    &__nav
+      flex-direction: column
+    &__link
+      margin-bottom: 20px

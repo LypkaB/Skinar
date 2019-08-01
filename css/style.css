@@ -10,6 +10,26 @@
   margin: auto;
 }
 
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+
 /*<--- fonts --->*/
 
 @font-face {
@@ -41,6 +61,7 @@ body {
   font-family: 'Proxima Nova Semibold', sans-serif;
   font-size: 12px;
   color: #507fe1;
+  background-color: #fff;
   text-transform: uppercase;
   cursor: pointer;
   outline: none;
@@ -55,6 +76,14 @@ body {
   text-transform: uppercase;
 }
 
+@media (max-width: 576px) {
+  .button-o {
+    font-size: 10px;
+  }
+}
+
+/*<--- header --->*/
+
 /* navbar */
 
 .navbar {
@@ -67,7 +96,6 @@ body {
 }
 
 .navbar-wrap {
-  min-height: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,13 +139,15 @@ body {
   color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-200%);
+  transform: translateX(-200%);
+  opacity: 0;
 }
 
 .menu_active {
-  -webkit-transform: translateY(0%);
-  transform: translateY(0%);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
 }
 
 .menu__nav {
@@ -182,13 +212,46 @@ body {
   color: #7b7b79;
 }
 
+@media (max-width: 991px) {
+  .navbar__mobile,
+  .navbar__landline {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+
+  .menu {
+    top: 60px;
+  }
+
+  .menu-button {
+    height: 60px;
+  }
+
+  .menu__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .menu__link {
+    margin-bottom: 20px;
+  }
+}
+
 /* hero */
 
 .hero {
-  background: #f1f1f1 url("/img/hero/hero-bg.jpg") no-repeat center top 80px;
-  background-size: contain;
-  padding-top: 180px;
+  margin-top: 80px;
+  padding-top: 120px;
   padding-bottom: 270px;
+  background: #f1f1f1 url("/img/hero/hero-bg.jpg") no-repeat center top;
+  background-size: contain;
 }
 
 .hero__title {
@@ -202,4 +265,16 @@ body {
   margin-bottom: 67px;
   font-family: 'Proxima Nova Semibold', sans-serif;
   font-size: 30px;
+}
+
+@media (max-width: 991px) {
+  .hero {
+    background-size: 100%;
+    background-position: top right;
+    margin-top: 60px;
+  }
+
+  .hero__title {
+    max-width: 100%;
+  }
 }
