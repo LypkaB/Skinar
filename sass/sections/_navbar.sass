@@ -1,5 +1,11 @@
-/*<--- navbar --->*/
+/* navbar */
 .navbar
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  background-color: #fff
+  z-index: 99
   &-wrap
     min-height: 80px
     display: flex
@@ -20,6 +26,27 @@
     color: $text-color-light
     text-decoration: none
 .menu
+  position: fixed
+  z-index: 0
+  width: 100%
+  top: 80px
+  left: 0
+  padding: 16px 0
+  background-color: $primary
+  color: #fff
+  transition: 0.2s
+  transform: translateX(-100%)
+  &_active
+    transform: translateY(0%)
+  &__nav
+    display: flex
+    align-items: center
+    justify-content: space-around
+  &__link
+    font-size: 17px
+    color: #fff
+    text-decoration: none
+    text-transform: uppercase
   &-button
     display: flex
     flex-direction: column
