@@ -290,7 +290,7 @@ body {
   margin-top: 80px;
   padding-top: 120px;
   padding-bottom: 270px;
-  background: #f1f1f1 url("/img/hero/hero-bg.jpg") no-repeat center top;
+  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top;
   background-size: cover;
 }
 
@@ -340,7 +340,7 @@ body {
 
 .offer-block {
   margin-top: -200px;
-  background: #fff url("/img/offer/form-bg.png") no-repeat center right;
+  background: #fff url("../img/offer/form-bg.png") no-repeat center right;
   background-size: contain;
   padding: 80px;
   -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
