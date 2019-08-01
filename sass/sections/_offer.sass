@@ -1,0 +1,41 @@
+/*<--- Main --->*/
+/* offer */
+.offer
+  padding: 129px 0
+  &-block
+    margin-top: -200px
+    background: #fff url('/img/offer/form-bg.png') no-repeat center right
+    background-size: contain
+    padding: 80px
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
+  &__title
+    margin-bottom: 20px
+    +bold
+    font-size: 25px
+    text-transform: uppercase
+  &__subtitle
+    display: block
+    font-size: 21px
+    margin-bottom: 48px
+.form
+  &__row
+    display: flex
+    align-items: center
+    max-width: 900px
+    margin-bottom: 25px
+    &:last-child
+      margin-bottom: 0
+  &__label
+    display: block
+    margin-bottom: 15px
+    font-size: 17px
+  &__group
+    flex-basis: 33.33%
+  &__input
+    width: 100%
+    border-right-width: 0
+    &:last-child
+      border-right-width: 1px
+  &__button
+    width: 100%
+    height: 80px
