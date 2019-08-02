@@ -56,7 +56,7 @@ body {
 }
 
 .section {
-  padding: 100px 0;
+  padding: 20px 100px 0 100px;
 }
 
 .section-title {
@@ -67,7 +67,7 @@ body {
 }
 
 .section__title {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .button-o {
@@ -89,6 +89,7 @@ body {
   background-color: #507fe1;
   color: #ffffff;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .bg-secondary {
@@ -134,6 +135,14 @@ body {
 @media (max-width: 576px) {
   .button-o {
     font-size: 10px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 24px;
   }
 }
 
@@ -332,6 +341,7 @@ body {
 
   .hero__title {
     max-width: 100%;
+    padding-top: 230px;
   }
 }
 
@@ -345,12 +355,18 @@ body {
   }
 }
 
+@media (max-width: 576px) {
+  .hero__title {
+    padding-top: 10px;
+  }
+}
+
 /*<--- Main --->*/
 
 /* offer */
 
 .offer {
-  padding: 129px 0;
+  padding: 130px 0 35px 0;
 }
 
 .offer-block {
@@ -483,4 +499,19 @@ body {
   flex-basis: 33%;
   text-align: center;
   margin-bottom: 100px;
+}
+
+@media (max-width: 991px) {
+  .features-block__item {
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .features-block__item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
 }

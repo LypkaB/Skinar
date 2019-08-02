@@ -4,7 +4,7 @@ body
   color: $text-color
 
 .section
-  padding: 100px 0
+  padding: 20px 100px 0 100px
 
   &-title
     +bold
@@ -13,7 +13,7 @@ body
     text-transform: uppercase
 
   &__title
-    margin-bottom: 100px
+    margin-bottom: 50px
 
 .button-o
   padding: 17px 22px
@@ -33,6 +33,7 @@ body
   background-color: $primary
   color: #ffffff
   text-transform: uppercase
+  cursor: pointer
 
 .bg-secondary
   background: $bg-secondary
@@ -66,3 +67,9 @@ body
 @media (max-width: 576px)
   .button-o
     font-size: 10px
+
+  .section
+    padding: 60px 0
+
+    &-title
+      font-size: 24px
