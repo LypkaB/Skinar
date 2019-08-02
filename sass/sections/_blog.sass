@@ -34,3 +34,23 @@
 
   &-card
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08)
+
+@media (max-width: 1199px)
+  .blog
+    &-list
+      justify-content: space-around
+      &__card
+        margin-right: 30px
+        margin-left: 30px
+
+@media (max-width: 768px)
+  .blog
+    &__heading
+      flex-wrap: wrap
+      justify-content: center
+
+@media (max-width: 576px)
+  .blog
+    &__heading
+      flex-wrap: wrap
+      justify-content: center
