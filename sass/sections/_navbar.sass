@@ -7,13 +7,15 @@
   width: 100%
   background-color: #fff
   z-index: 99
+
   &-wrap
-    //min-height: 80px
     display: flex
     align-items: center
     justify-content: space-between
+
   &__mobile, &__landline
     text-align: right
+
   &__phone
     display: block
     margin-bottom: 5px
@@ -21,11 +23,13 @@
     font-size: 19px
     text-decoration: none
     color: $text-color
+
   &__small-text
     display: block
     font-size: 14px
     color: $text-color-light
     text-decoration: none
+
 .menu
   position: fixed
   z-index: 0
@@ -38,18 +42,22 @@
   transition: 0.2s
   transform: translateX(-200%)
   opacity: 0
+
   &_active
     transform: translateY(0)
     opacity: 1
+
   &__nav
     display: flex
     align-items: center
     justify-content: space-around
+
   &__link
     font-size: 17px
     color: #fff
     text-decoration: none
     text-transform: uppercase
+
   &-button
     display: flex
     flex-direction: column
@@ -61,12 +69,14 @@
     border: none
     border-right: 1px solid rgba(#510bba, 0.1)
     border-left: 1px solid rgba(#510bba, 0.1)
+
     &__line
       display: block
       width: 20px
       height: 3px
       margin: 2px 0
       background-color: #89a9eb
+
 .logo
   &__text
     display: block
@@ -74,17 +84,21 @@
     +bold
     font-size: 18px
     text-transform: uppercase
+
   &__description
     display: block
     font-size: 14px
     color: $text-color-light
+
 @media (max-width: 991px)
   .navbar
     &__mobile, &__landline
       display: none
+
 @media (max-width: 576px)
   .logo
     display: none
+
   .menu
     top: 60px
     &-button
