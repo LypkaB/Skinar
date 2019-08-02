@@ -41,29 +41,41 @@
 
     &__image
       display: block
+
   &__link
     text-align: center
     margin-top: 20px
+
   &__link-more
     display: inline-block
     margin-bottom: 24px
+
   &__description
     display: block
+    padding-bottom: 30px
 
 @media (max-width: 1199px)
   .catalog
     &-block
       justify-content: center
+
     &-card
       max-width: 470px
+
     &__card
       margin-right: 10px
 
 @media (max-width: 576px)
   .section
     padding-top: 20px
+    padding-bottom: 30px
+
   .catalog
     &-card
       max-width: 350px
+
     &__card
       margin-right: 0
+
+    &__description
+      padding-bottom: 0
