@@ -92,6 +92,25 @@ body {
   cursor: pointer;
 }
 
+.button-fitting {
+  background-color: #fff;
+  color: #507fe1;
+}
+
+.button-add {
+  background-color: #7c9fe8;
+  color: #fff;
+}
+
+.button-like {
+  width: 30px;
+  height: 30px;
+  padding-top: 7px;
+  border: none;
+  background-color: #507fe1;
+  cursor: pointer;
+}
+
 .bg-secondary {
   background: #f1f1f1;
 }
@@ -514,4 +533,65 @@ body {
     flex-basis: 100%;
     margin-bottom: 50px;
   }
+}
+
+/* catalog */
+
+.catalog {
+  background-color: #f5f6f8;
+}
+
+.catalog-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.catalog-card {
+  max-width: 570px;
+  position: relative;
+  -webkit-box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+  box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1);
+}
+
+.catalog__card {
+  margin-bottom: 30px;
+}
+
+.catalog__card__buttons {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: 0;
+  right: 0;
+}
+
+.catalog__card__button {
+  height: 30px;
+  padding: 10px;
+  border: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.catalog__card__tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 10px;
+  font-size: 12px;
+  background-color: rgba(80, 127, 225, 0.6);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.catalog__card__image {
+  display: block;
 }
