@@ -98,6 +98,10 @@ img {
   cursor: pointer;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .button-fitting {
   background-color: #fff;
   color: #507fe1;
@@ -158,6 +162,10 @@ img {
 }
 
 @media (max-width: 576px) {
+  .button {
+    font-size: 10px;
+  }
+
   .button-o {
     font-size: 10px;
   }
@@ -339,7 +347,7 @@ img {
   margin-top: 80px;
   padding-top: 120px;
   padding-bottom: 270px;
-  background: #f1f1f1 url("../img/hero/hero-bg.jpg") no-repeat center top;
+  background: #f1f1f1 url("../img/hero-bg.jpg") no-repeat center top;
   background-size: cover;
 }
 
@@ -745,4 +753,65 @@ img {
     -ms-flex-pack: center;
     justify-content: center;
   }
+}
+
+.price-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.price-block__card {
+  margin-bottom: 10px;
+}
+
+.price-card {
+  position: relative;
+  background-color: #fff;
+}
+
+.price-card__text {
+  padding: 20px;
+  font-size: 15px;
+}
+
+.price-card__title {
+  margin: 0;
+}
+
+.price-card__cost {
+  font-family: 'Proxima Nova Semibold', sans-serif;
+}
+
+.price-card__pricetag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.price-card__button {
+  width: 100%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 20px 20px 20px;
+  z-index: -1;
+  text-align: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+.price-card:hover .price-card__button {
+  z-index: 99;
+  bottom: -80px;
 }
