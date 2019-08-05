@@ -1013,3 +1013,9 @@ img {
   margin-left: 70px;
   font-size: 20px;
 }
+
+@media (max-width: 991px) {
+  .factory-block__text {
+    margin-left: 6px;
+  }
+}
