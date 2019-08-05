@@ -894,3 +894,19 @@ img {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
+
+@media (max-width: 991px) {
+  .step {
+    width: 33%;
+  }
+
+  .step::before {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .step {
+    width: 100%;
+  }
+}

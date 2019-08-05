@@ -30,3 +30,14 @@
       display: flex
       justify-content: space-between
       flex-wrap: wrap
+
+@media (max-width: 991px)
+  .step
+    width: 33%
+
+    &::before
+      display: none
+
+@media (max-width: 420px)
+  .step
+    width: 100%
