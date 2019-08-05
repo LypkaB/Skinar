@@ -5,10 +5,16 @@
 
   &-block
     margin-top: -200px
-    background: #fff url('../img/offer/form-bg.png') no-repeat center right
-    background-size: contain
     padding: 80px
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1)
+
+    &_calc-bg
+      background: #fff url('../img/offer/form-bg-calc.png') no-repeat center right
+      background-size: contain
+
+    &_price-bg
+      background: #fff url('../img/offer/form-bg-price.png') no-repeat center right
+      background-size: contain
 
   &__title
     margin-bottom: 20px
@@ -17,6 +23,7 @@
     text-transform: uppercase
 
   &__subtitle
+    max-width: 800px
     display: block
     font-size: 21px
     margin-bottom: 48px
@@ -26,7 +33,7 @@
     display: flex
     align-items: center
     max-width: 900px
-    margin-bottom: 25px
+    margin-bottom: 30px
 
     &:last-child
       margin-bottom: 0
@@ -49,6 +56,13 @@
   &__button
     width: 100%
     height: 80px
+
+    &-price
+      padding: 0
+
+  &__policy
+    display: inline-block
+    margin-left: 50px
 
 @media (max-width: 1199px)
   .offer
