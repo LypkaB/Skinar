@@ -991,3 +991,25 @@ img {
   border: 10px solid transparent;
   border-top: 10px solid #fff;
 }
+
+.factory-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.factory-block__image {
+  margin: 20px 0;
+}
+
+.factory-block__text {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  margin-left: 70px;
+  font-size: 20px;
+}
