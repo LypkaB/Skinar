@@ -13,6 +13,7 @@
       background-size: contain
 
     &_price-bg
+      margin-top: -400px
       background: #fff url('../img/offer/form-bg-price.png') no-repeat center right
       background-size: contain
 
@@ -69,13 +70,20 @@
     &-block
       background-position: center right -120px
 
-@media (max-width: 768px)
+@media (max-width: 991px)
   .offer
     &-block
       background-image: none
       background-color: #fff
       padding: 40px
 
+  .form
+    &__button
+      &-price
+        padding: 25px 45px
+
+@media (max-width: 768px)
+  .offer
     &__title
       font-size: 18px
 
@@ -97,3 +105,7 @@
 
     &__input
       margin-bottom: 20px
+
+    &__policy
+      margin-left: 0
+      margin-top: 30px
