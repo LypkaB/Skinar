@@ -786,6 +786,8 @@ img {
   }
 }
 
+/* price */
+
 .price {
   padding-bottom: 70px;
 }
@@ -881,6 +883,8 @@ img {
   }
 }
 
+/* step */
+
 .step {
   position: relative;
   text-align: center;
@@ -941,6 +945,8 @@ img {
     width: 100%;
   }
 }
+
+/* before */
 
 .before {
   padding-bottom: 40px;
@@ -1126,6 +1132,8 @@ img {
   display: none;
 }
 
+/* reviews */
+
 .reviews {
   padding-bottom: 400px;
   background-color: #f5f6f8;
@@ -1176,6 +1184,8 @@ img {
   border-top: 10px solid #fff;
 }
 
+/* factory */
+
 .factory-block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1203,6 +1213,8 @@ img {
     margin-left: 6px;
   }
 }
+
+/* contacts */
 
 .contacts {
   background-color: #f6f7f9;
@@ -1248,6 +1260,8 @@ img {
   }
 }
 
+/* questions */
+
 .questions {
   padding-bottom: 20px;
 }
@@ -1274,6 +1288,8 @@ img {
   justify-content: space-around;
   margin: auto;
 }
+
+/*<--- footer --->*/
 
 .footer {
   padding: 40px 0;
