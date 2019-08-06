@@ -40,7 +40,7 @@
   background-color: $primary
   color: #fff
   transition: 0.2s
-  transform: translateX(-200%)
+  transform: translateY(-200%)
   opacity: 0
 
   &_active
@@ -70,6 +70,12 @@
     border-right: 1px solid rgba(#510bba, 0.1)
     border-left: 1px solid rgba(#510bba, 0.1)
 
+    &:hover
+      cursor: pointer
+
+    &:focus
+      outline: none
+
     &__line
       display: block
       width: 20px
@@ -94,6 +100,11 @@
   .navbar
     &__mobile, &__landline
       display: none
+
+  .menu
+    &__link
+      padding-right: 20px
+      text-align: center
 
 @media (max-width: 576px)
   .logo
