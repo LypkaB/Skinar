@@ -30,4 +30,7 @@ $(window).load(function() {
         $("html, body").animate({ scrollTop: $(_href).offset().top -220 + "px"});
         return false;
     });
+
+    /* mask for phone fields */
+    $('input[type="tel"]').mask('+1 (999) 999-99-99');
 });
