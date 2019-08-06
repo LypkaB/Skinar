@@ -34,6 +34,7 @@
 
 @font-face {
   font-family: 'Proxima Nova Semibold';
+  font-display: swap;
   src: url("../fonts/ProximaNova-Semibold.eot");
   src: url("../fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.ttf") format("truetype");
   font-weight: normal;
@@ -42,6 +43,7 @@
 
 @font-face {
   font-family: 'Proxima Nova Light';
+  font-display: swap;
   src: url("../fonts/ProximaNova-Light.eot");
   src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype");
   font-weight: normal;
@@ -1095,6 +1097,10 @@ img {
   border: none;
 }
 
+.before .arrow:hover {
+  cursor: pointer;
+}
+
 .before .arrow:focus {
   outline: none;
 }
@@ -1107,6 +1113,18 @@ img {
 .before .arrow-right {
   -webkit-transform: translateX(250%);
   transform: translateX(250%);
+}
+
+@media (max-width: 991px) {
+  .before-slider-arrows {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .before {
+    display: none;
+  }
 }
 
 /* Slider */
@@ -1220,7 +1238,7 @@ img {
   background-color: #f5f6f8;
 }
 
-.reviews-slider {
+.reviews-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1229,11 +1247,11 @@ img {
   justify-content: space-between;
 }
 
-.reviews-slider__item {
+.reviews-block__item {
   text-align: center;
 }
 
-.reviews-slider__image {
+.reviews-block__image {
   width: 70px;
   height: 70px;
   display: block;
@@ -1242,7 +1260,7 @@ img {
   border-radius: 60%;
 }
 
-.reviews-slider__text {
+.reviews-block__text {
   max-width: 370px;
   position: relative;
   padding: 20px;
@@ -1253,7 +1271,7 @@ img {
   border-radius: 10px;
 }
 
-.reviews-slider__text::after {
+.reviews-block__text::after {
   content: '';
   height: 10px;
   position: absolute;
@@ -1263,6 +1281,39 @@ img {
   transform: translateX(-50%);
   border: 10px solid transparent;
   border-top: 10px solid #fff;
+}
+
+@media (max-width: 1199px) {
+  .reviews-block__item {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .reviews-block__item {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews {
+    padding-bottom: 300px;
+  }
+
+  .reviews-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .reviews-block__item {
+    margin-bottom: 10px;
+  }
 }
 
 /* factory */

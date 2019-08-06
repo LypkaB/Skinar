@@ -3,7 +3,7 @@
   padding-bottom: 400px
   background-color: #f5f6f8
 
-  &-slider
+  &-block
     display: flex
     justify-content: space-between
 
@@ -37,3 +37,23 @@
         transform: translateX(-50%)
         border: 10px solid transparent
         border-top: 10px solid #fff
+
+@media (max-width: 1199px)
+  .reviews-block__item
+      margin-right: 20px
+
+@media (max-width: 991px)
+  .reviews-block__item
+    margin-right: 10px
+
+@media (max-width: 768px)
+  .reviews
+    padding-bottom: 300px
+
+    &-block
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+
+      &__item
+        margin-bottom: 10px

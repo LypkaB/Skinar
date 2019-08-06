@@ -46,6 +46,9 @@
     background-color: transparent
     border: none
 
+    &:hover
+      cursor: pointer
+
     &:focus
       outline: none
 
@@ -54,3 +57,11 @@
 
     &-right
       transform: translateX(250%)
+
+@media (max-width: 991px)
+  .before-slider-arrows
+    display: none
+
+@media (max-width: 420px)
+  .before
+    display: none
