@@ -9,6 +9,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/twentytwenty.css">
 
     <title>Skynar factory</title>
 </head>
@@ -488,6 +489,47 @@
             </div><!-- /.container -->
         </section><!-- /.steps -->
 
+        <!-- before -->
+        <section class="before section">
+            <div class="container">
+                <h2 class="section-title section__title">Before and after</h2>
+                <div class="before-slider-wrap">
+                    <div class="before-slider">
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/before-slider/sample-before.png" alt="Sample image">
+                                <img src="img/before-slider/sample-after.png" alt="Sample image">
+                            </div>
+                        </div>
+                        <!-- /.before-slider__item -->
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/before-slider/sample-before.png" alt="Sample image">
+                                <img src="img/before-slider/sample-after.png" alt="Sample image">
+                            </div>
+                        </div>
+                        <!-- /.before-slider__item -->
+                        <div class="before-slider__item">
+                            <div class="before-after">
+                                <img src="img/before-slider/sample-before.png" alt="Sample image">
+                                <img src="img/before-slider/sample-after.png" alt="Sample image">
+                            </div>
+                        </div>
+                        <!-- /.before-slider__item -->
+                    </div>
+                    <!-- /.before-slider -->
+                    <div class="before-slider-arrows">
+                        <button class="arrow arrow-left">
+                            <img src="img/before-slider/left.png" alt="left arrow">
+                        </button>
+                        <button class="arrow arrow-right">
+                            <img src="img/before-slider/right.png" alt="right arrow">
+                        </button>
+                    </div><!-- /.before-slider-arrows -->
+                </div><!-- /.before-slider-wrap -->
+            </div><!-- /.container -->
+        </section><!-- /.before -->
+
         <!-- reviews -->
         <section class="reviews section">
             <div class="container">
@@ -666,5 +708,28 @@
 
     <!-- Widget for messengers «Spikmi» -->
     <script src="https://spikmi.com/Widget?Id=1398"></script>
+
+    <!-- jQuery -->
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    <!-- Slider -->
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/jquery.twentytwenty.js"></script>
+    <script src="js/slick.min.js"></script>
+
+    <!-- Scripts -->
+    <script>
+        $(window).load(function() {
+            $('.before-after').twentytwenty();
+
+            $('.before-slider').slick({
+                draggable: false,
+                dots: true,
+                dotsClass: 'before-slider__dots',
+                prevArrow: $('.arrow-left'),
+                nextArrow: $('.arrow-right')
+            });
+        });
+    </script>
 </body>
 </html>
