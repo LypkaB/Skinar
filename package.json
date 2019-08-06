@@ -1,5 +1,5 @@
 {
-  "name": "skynar.com",
+  "name": "skinar.com",
   "version": "1.0.0",
   "description": "Training website on HTML & CSS",
   "main": "gulpfile.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/LypkaB/Skynar.com.git"
+    "url": "git+https://github.com/LypkaB/Skinar.com.git"
   },
   "author": "Lypka B.",
   "license": "ISC",
