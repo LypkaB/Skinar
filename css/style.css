@@ -233,6 +233,14 @@ img {
   .section-title {
     font-size: 24px;
   }
+
+  .select_checked {
+    padding-left: 0;
+  }
+
+  .form__label:first-child {
+    margin-top: 20px;
+  }
 }
 
 /*<--- header --->*/
@@ -283,7 +291,7 @@ img {
 
 .menu {
   position: fixed;
-  z-index: 0;
+  z-index: 1;
   width: 100%;
   top: 80px;
   left: 0;
